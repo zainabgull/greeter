@@ -1,3 +1,4 @@
+from datetime import date
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 GREETING = "Hello"
@@ -6,7 +7,7 @@ NAME = "Zainab"
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        body = f"<h1>{GREETING}, {NAME}!</h1>"
+        body = f"<h1>{GREETING}, {NAME}!</h1><p>Life is like riding a bicycle. To keep your balance, you must keep moving.</p>"
         self.send_response(200)
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.end_headers()
