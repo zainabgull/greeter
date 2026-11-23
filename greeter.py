@@ -1,7 +1,7 @@
 from datetime import date
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-GREETING = "Hello"
+GREETING = "Hey"
 NAME = "Zainab"
 
 
